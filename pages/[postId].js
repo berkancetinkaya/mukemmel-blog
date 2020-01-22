@@ -10,25 +10,6 @@ const BlogPost = ({ post }) => (
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
-    <div className="hero">
-      <h1 className="hero-title">Selman Kahya</h1>
-      <div className="hero-social-links">
-        <Link href="https://medium.com/@selmankahya">
-          <a className="social-link">Medium</a>
-        </Link>
-        <Link href="https://www.twitter.com/selmankahyax">
-          <a className="social-link">Twitter</a>
-        </Link>
-        <Link href="https://www.linkedin.com/in/selmankahya">
-          <a className="social-link">LinkedIn</a>
-        </Link>
-        <Link href="https://www.instagram.com/selmankahyax/?hl=en">
-          <a className="social-link">Instagram</a>
-        </Link>
-      </div>
-    </div>
-
     <div className="blog">
       <h2 className="blog-title">
         <Link href="/test">
@@ -72,6 +53,7 @@ const BlogPost = ({ post }) => (
       }
     `}</style>
   </div>
+  
 );
 
 BlogPost.getInitialProps = async ({ req, query }) => {
